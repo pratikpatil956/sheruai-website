@@ -28,11 +28,22 @@
 
 <body>
 
-<header>
+<header style="display:flex; justify-content:space-between; align-items:center; padding:18px 80px; background:#0b0b0f;">
+
     <div style="display:flex; align-items:center; gap:12px;">
-    <img src="{{ url_for('static', filename='logo.png') }}" style="height:50px;">
-    <div class="logo">Sheru AI ML</div>
+        <img src="{{ url_for('static', filename='dog.png') }}" height="42">
+
+        <div>
+            <div class="logo" style="font-size:26px; color:#ff3c3c; font-weight:700;">
+                Sheru AI ML
+            </div>
+
+            <div style="font-size:13px; color:#bbb; margin-top:2px;">
+                Loyal as a Hound. Smart as AI.
+            </div>
+        </div>
     </div>
+
     <nav>
         <a href="/">Home</a>
         <a href="/capabilities">Capabilities</a>
@@ -40,13 +51,31 @@
         <a href="/genai">Generative AI</a>
         <a href="/contact">Contact</a>
     </nav>
+
 </header>
 
-<div class="hero">
-    <h1>Building the Future with Agentic AI & Generative Intelligence</h1>
-    <div class="tagline">Loyal as a Hound. Smart as AI.</div>
-    <a href="/contact" class="btn">Start a Conversation</a>
+
+<!-- HERO SECTION -->
+<div style="display:flex; align-items:center; padding:120px 80px; gap:60px;">
+
+    <!-- LEFT: Text -->
+    <div style="flex:1;">
+        <h1 style="font-size:60px; line-height:1.1;">
+            Building the Future with<br>
+            Agentic AI & Generative Intelligence
+        </h1>
+
+        <div style="margin-top:20px; font-size:22px; color:#ff3c3c;">
+            Loyal as a Hound. Smart as AI.
+        </div>
+
+        <a href="/contact" class="btn" style="margin-top:40px; display:inline-block;">
+            Start a Conversation
+        </a>
+    </div>
+
 </div>
+
 
 <section style="display:flex; gap:50px; align-items:flex-start;">
 
